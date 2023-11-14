@@ -84,7 +84,7 @@
     </section>
     <section id="open_quiz">
         <div class="wrap">
-            <div class="bh1"> Получите расчет стоимости в 3-х вариантах бюджета и подарок:</div>
+            <div class="bh1"> Получите все варианты дизельных генераторов с ценами для Ваших задачи и подарок:</div>
             <div class="qwiz-inner qwiz-open-inner ">
                 <form class="qwiztest" id="form_quiz_1">
                     <!-- Hidden Required Fields -->
@@ -93,11 +93,70 @@
                     <div class="qwiz-wrap">
                         <div class="qw1 qwiz-item" data-type="radio" style="">
                             <span class="step">Шаг 1/6</span>
-                            <h3>Выберите класс Вашего автомобиля</h3>
+                            <h3>Какая требуется мощность генератора?</h3>
+
+                            <div class="field_wrap field_wrap_m" style="">
+                                <label class="f11 quiz-field_radio_text quiz-field_radio">
+                                    <input type="radio" name="мощность"
+                                           value="до 10кВт"
+                                           required="">
+                                    <span class="form-field-radio-item__check"></span>
+                                    <span class="">до 10кВт</span></label>
+                                <label class="f11 quiz-field_radio_text quiz-field_radio">
+                                    <input type="radio" name="мощность" value="от 10кВт до 50кВт" required="">
+                                    <span class="form-field-radio-item__check"></span>
+                                    <span class="">от 10кВт до 50кВт</span></label>
+                                <label class="f11 quiz-field_radio_text quiz-field_radio">
+                                    <input type="radio" name="мощность" value="от 50кВт до 150кВт" required="">
+                                    <span class="form-field-radio-item__check"></span>
+                                    <span class="">от 50кВт до 150кВт</span></label>
+                                <label class="f11 quiz-field_radio_text quiz-field_radio">
+                                    <input type="radio" name="мощность" value="от 150кВт до 500кВт" required="">
+                                    <span class="form-field-radio-item__check"></span>
+                                    <span class="">от 150кВт до 500кВт</span></label>
+                                <label class="f11 quiz-field_radio_text quiz-field_radio">
+                                    <input type="radio" name="мощность" value="более 500кВт" required="">
+                                    <span class="form-field-radio-item__check"></span>
+                                    <span class="">более 500кВт</span></label>
+                                <label class="f11 quiz-field_radio_text quiz-field_radio">
+                                    <input type="radio" name="мощность" value="Не знаю" required="">
+                                    <span class="form-field-radio-item__check"></span>
+                                    <span class="">Не знаю</span></label>
+                            </div>
+                            <div class="quiz-actions">
+                                <span class="next component-button effect--opacity">Далее</span>
+                            </div>
+                        </div>
+                        <div class="qw2 qwiz-item" data-type="text" style="display: none;">
+                            <span class="step">Шаг 2/6</span>
+                            <h3>Вам нужен генератор для резерва или как основной источник электричества?</h3>
+                            <div class="field_wrap field_wrap_m" style="">
+                                <label class="f11 quiz-field_radio_text quiz-field_radio">
+                                    <input type="radio" name="вопрос 2" value="Как основной" required="">
+                                    <span class="form-field-radio-item__check"></span>
+                                    <span class="">Как основной</span></label>
+                                <label class="f11 quiz-field_radio_text quiz-field_radio">
+                                    <input type="radio" name="вопрос 2" value="Как резервный" required="">
+                                    <span class="form-field-radio-item__check"></span>
+                                    <span class="">Как резервный</span></label>
+                                <label class="f11 quiz-field_radio_text quiz-field_radio">
+                                    <input type="radio" name="вопрос 2" value="Не знаю" required="">
+                                    <span class="form-field-radio-item__check"></span>
+                                    <span class="">Не знаю</span></label>
+                            </div>
+                            <div class="quiz-actions">
+                                <span class="prev component-button effect--opacity">Назад</span>
+                                <span class="next component-button effect--opacity">Далее</span>
+                            </div>
+                        </div>
+                        <div class="qw3 qwiz-item" data-type="text" style="display: none;">
+                            <span class="step">Шаг 3/6</span>
+                            <h3>Какой вариант исполнения генератора необходим?</h3>
+
                             <div class="field_wrap field_wrap_flex field_wrap_flex_1 scroller">
                                 <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
                                        style="">
-                                    <input type="radio" class="form-field-image" name="класс автомобиля" value="Мини">
+                                    <input type="radio" class="form-field-image" name="вариант исполнения" value="Открытый">
                                     <div class="form-field-image-content">
                                         <div class="component-image form-field-image-img">
                                             <img class="natural-image component-image__natural" alt=""
@@ -118,11 +177,11 @@
                                        </svg>
                                     </span>
                                     </div>
-                                    <span class="form-field-image-text">Мини</span>
+                                    <span class="form-field-image-text">Открытый</span>
                                 </label>
                                 <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
                                        style="">
-                                    <input type="radio" class="form-field-image" name="класс автомобиля" value="Седан">
+                                    <input type="radio" class="form-field-image" name="вариант исполнения" value="В контейнере">
                                     <div class="form-field-image-content">
                                         <div class="component-image form-field-image-img">
                                             <img class="natural-image component-image__natural" alt=""
@@ -143,11 +202,11 @@
                                        </svg>
                                     </span>
                                     </div>
-                                    <span class="form-field-image-text">Седан</span>
+                                    <span class="form-field-image-text">В контейнере</span>
                                 </label>
                                 <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
                                        style="">
-                                    <input type="radio" class="form-field-image" name="класс автомобиля" value="Бизнес">
+                                    <input type="radio" class="form-field-image" name="вариант исполнения" value="На шасси">
                                     <div class="form-field-image-content">
                                         <div class="component-image form-field-image-img">
                                             <img class="natural-image component-image__natural" alt=""
@@ -168,12 +227,12 @@
                                        </svg>
                                     </span>
                                     </div>
-                                    <span class="form-field-image-text">Бизнес‍</span>
+                                    <span class="form-field-image-text">На шасси‍</span>
                                 </label>
                                 <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
                                        style="">
-                                    <input type="radio" class="form-field-image" name="класс автомобиля"
-                                           value="Кроссовер">
+                                    <input type="radio" class="form-field-image" name="вариант исполнения"
+                                           value="В кожухе">
                                     <div class="form-field-image-content">
                                         <div class="component-image form-field-image-img">
                                             <img class="natural-image component-image__natural" alt=""
@@ -194,12 +253,12 @@
                                        </svg>
                                     </span>
                                     </div>
-                                    <span class="form-field-image-text">Кроссовер</span>
+                                    <span class="form-field-image-text">В кожухе</span>
                                 </label>
                                 <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
                                        style="">
-                                    <input type="radio" class="form-field-image" name="класс автомобиля"
-                                           value="Внедорожник">
+                                    <input type="radio" class="form-field-image" name="вариант исполнения"
+                                           value="Не знаю">
                                     <div class="form-field-image-content">
                                         <div class="component-image form-field-image-img">
                                             <img class="natural-image component-image__natural" alt=""
@@ -220,89 +279,47 @@
                                        </svg>
                                     </span>
                                     </div>
-                                    <span class="form-field-image-text">Внедорожник</span>
+                                    <span class="form-field-image-text">Не знаю</span>
                                 </label>
-                                <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
-                                       style="">
-                                    <input type="radio" class="form-field-image" name="класс автомобиля"
-                                           value="Минивен">
-                                    <div class="form-field-image-content">
-                                        <div class="component-image form-field-image-img">
-                                            <img class="natural-image component-image__natural" alt=""
-                                                 src="img/qw/1_6.jpg">
-                                        </div>
-                                        <span class="form-field-image-check">
-                                       <svg class="form-field-image-check-icon"
-                                            viewBox="0 0 50 50">
-                                          <g fill="none"
-                                             fill-rule="evenodd">
-                                             <circle
-                                                     id="bg" fill="" cx="25" cy="25" r="25"></circle>
-                                             <path
-                                                     id="arrow" fill="#000"
-                                                     d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
-                                                     transform="translate(16 18)"></path>
-                                          </g>
-                                       </svg>
-                                    </span>
-                                    </div>
-                                    <span class="form-field-image-text">Минивен</span>
-                                </label>
+
                             </div>
-                            <div class="quiz-actions">
-                                <span class="next component-button effect--opacity">Далее</span>
-                            </div>
-                        </div>
-                        <div class="qw2 qwiz-item" data-type="text" style="display: none;">
-                            <span class="step">Шаг 2/6</span>
-                            <h3>Какой вид оклейки интересует?</h3>
-                            <div class="field_wrap field_wrap_m" style="">
-                                <label class="f11 quiz-field_radio_text quiz-field_radio">
-                                    <input type="radio" name="оклейка" value="Полная" required="">
-                                    <span class="form-field-radio-item__check"></span>
-                                    <span class="">Полная</span></label>
-                                <label class="f11 quiz-field_radio_text quiz-field_radio">
-                                    <input type="radio" name="оклейка" value="Частичная" required="">
-                                    <span class="form-field-radio-item__check"></span>
-                                    <span class="">Частичная</span></label>
-                                <label class="f11 quiz-field_radio_text quiz-field_radio">
-                                    <input type="radio" name="оклейка" value="Нужен совет специалиста" required="">
-                                    <span class="form-field-radio-item__check"></span>
-                                    <span class="">Нужен совет специалиста</span></label>
-                            </div>
+
+
                             <div class="quiz-actions">
                                 <span class="prev component-button effect--opacity">Назад</span>
                                 <span class="next component-button effect--opacity">Далее</span>
                             </div>
                         </div>
-                        <div class="qw3 qwiz-item" data-type="text" style="display: none;">
-                            <span class="step">Шаг 3/6</span>
-                            <h3>Какой пленкой хотите оклеить автомобиль?</h3>
-                            <div class="field_wrap field_wrap_m" style="">
-                                <label class="f11 quiz-field_radio_text quiz-field_radio">
-                                    <input type="radio" name="пленка"
-                                           value="Прозрачная (полиуретановая пленка для антигравийной защиты)"
-                                           required="">
-                                    <span class="form-field-radio-item__check"></span>
-                                    <span class="">Прозрачная (полиуретановая пленка для антигравийной защиты)</span></label>
-                                <label class="f11 quiz-field_radio_text quiz-field_radio">
-                                    <input type="radio" name="пленка" value="Цветная (виниловая пленка)" required="">
-                                    <span class="form-field-radio-item__check"></span>
-                                    <span class="">Цветная (виниловая пленка)</span></label>
-                            </div>
-                            <div class="quiz-actions">
-                                <span class="prev component-button effect--opacity">Назад</span>
-                                <span class="next component-button effect--opacity">Далее</span>
-                            </div>
-                        </div>
-                        <div class="qw4 qwiz-item" data-type="radio" style="display: none;">
+                        <div class="qw4 qwiz-item" data-type="text" style="display: none;">
                             <span class="step">Шаг 4/6</span>
-                            <h3>Выберете себе подарок, который получите при заказе:</h3>
+                            <h3>Нужна ли вам система автоматического запуска?</h3>
+                            <div class="field_wrap field_wrap_m" style="">
+                                <label class="f11 quiz-field_radio_text quiz-field_radio">
+                                    <input type="radio" name="система запуска" value="Да" required="">
+                                    <span class="form-field-radio-item__check"></span>
+                                    <span class="">Да</span></label>
+                                <label class="f11 quiz-field_radio_text quiz-field_radio">
+                                    <input type="radio" name="система запуска" value="Нет" required="">
+                                    <span class="form-field-radio-item__check"></span>
+                                    <span class="">Нет</span></label>
+                                <label class="f11 quiz-field_radio_text quiz-field_radio">
+                                    <input type="radio" name="система запуска" value="Не знаю" required="">
+                                    <span class="form-field-radio-item__check"></span>
+                                    <span class="">Не знаю</span></label>
+                            </div>
+                            <div class="quiz-actions">
+                                <span class="prev component-button effect--opacity">Назад</span>
+                                <span class="next component-button effect--opacity">Далее</span>
+                            </div>
+                        </div>
+                        <div class="qw5 qwiz-item" data-type="radio" style="display: none;">
+                            <span class="step">Шаг 5/6</span>
+                            <h3>Какой подарок Вы хотели бы получить при покупке дизельного генератора?</h3>
                             <div class="field_wrap field_wrap_flex scroller">
                                 <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
                                        style="">
                                     <input type="radio" class="form-field-image" name="Подарок"
-                                           value="Скидка на пленку до 15%">
+                                           value="Комплект ЗИП для техобслуживания">
                                     <div class="form-field-image-content">
                                         <div class="component-image form-field-image-img">
                                             <img class="natural-image component-image__natural" alt=""
@@ -323,12 +340,12 @@
                                        </svg>
                                     </span>
                                     </div>
-                                    <span class="form-field-image-text">Скидка на пленку до 15%</span>
+                                    <span class="form-field-image-text">Комплект ЗИП для техобслуживания</span>
                                 </label>
                                 <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
                                        style="">
                                     <input type="radio" class="form-field-image" name="Подарок"
-                                           value="Дополнительная гарантия на материалы">
+                                           value="Кэшбэк в размере 15 000 руб.">
                                     <div class="form-field-image-content">
                                         <div class="component-image form-field-image-img">
                                             <img class="natural-image component-image__natural" alt=""
@@ -349,12 +366,12 @@
                                        </svg>
                                     </span>
                                     </div>
-                                    <span class="form-field-image-text">Дополнительная гарантия на материалы</span>
+                                    <span class="form-field-image-text">Кэшбэк в размере <br>15 000 руб.</span>
                                 </label>
                                 <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
                                        style="">
                                     <input type="radio" class="form-field-image" name="Подарок"
-                                           value="Бесплатный дополнительные работы по авто">
+                                           value="Дополнительная скидка на покупку генератора">
                                     <div class="form-field-image-content">
                                         <div class="component-image form-field-image-img">
                                             <img class="natural-image component-image__natural" alt=""
@@ -375,7 +392,7 @@
                                        </svg>
                                     </span>
                                     </div>
-                                    <span class="form-field-image-text">Бесплатный дополнительные работы по авто</span>
+                                    <span class="form-field-image-text">Дополнительная скидка на покупку генератора</span>
                                 </label>
                             </div>
                             <div class="quiz-actions">
@@ -383,67 +400,7 @@
                                 <span class="next component-button effect--opacity">Далее</span>
                             </div>
                         </div>
-                        <div class="qw6 qwiz-item" data-type="radio" style="display: none;">
-                            <span class="step">Шаг 5/6</span>
-                            <h3>Как Вам удобнее получить расчет стоимости?</h3>
-                            <div class="field_wrap field_wrap_flex scroller">
-                                <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
-                                       style="">
-                                    <input type="radio" class="form-field-image" name="connection" value="WhatsApp">
-                                    <div class="form-field-image-content">
-                                        <div class="component-image form-field-image-img">
-                                            <img class="natural-image component-image__natural" alt=""
-                                                 src="img/qw/22335674_250_q55.avif">
-                                        </div>
-                                        <span class="form-field-image-check">
-                                       <svg class="form-field-image-check-icon"
-                                            viewBox="0 0 50 50">
-                                          <g fill="none"
-                                             fill-rule="evenodd">
-                                             <circle
-                                                     id="bg" fill="" cx="25" cy="25" r="25"></circle>
-                                             <path
-                                                     id="arrow" fill="#000"
-                                                     d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
-                                                     transform="translate(16 18)"></path>
-                                          </g>
-                                       </svg>
-                                    </span>
-                                    </div>
-                                    <span class="form-field-image-text">WhatsApp</span>
-                                </label>
-                                <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
-                                       style="">
-                                    <input type="radio" class="form-field-image" name="connection" value="Позвоните">
-                                    <div class="form-field-image-content">
-                                        <div class="component-image form-field-image-img">
-                                            <img class="natural-image component-image__natural" alt=""
-                                                 src="img/qw/22335695_250_q55.avif">
-                                        </div>
-                                        <span class="form-field-image-check">
-                                       <svg class="form-field-image-check-icon"
-                                            viewBox="0 0 50 50">
-                                          <g fill="none"
-                                             fill-rule="evenodd">
-                                             <circle
-                                                     id="bg" fill="" cx="25" cy="25" r="25"></circle>
-                                             <path
-                                                     id="arrow" fill="#000"
-                                                     d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
-                                                     transform="translate(16 18)"></path>
-                                          </g>
-                                       </svg>
-                                    </span>
-                                    </div>
-                                    <span class="form-field-image-text">Позвоните</span>
-                                </label>
-                            </div>
-                            <div class="quiz-actions">
-                                <span class="prev component-button effect--opacity">Назад</span>
-                                <span class="next component-button effect--opacity">Далее</span>
-                            </div>
-                        </div>
-                        <div class="qw7 qwiz-item qwiz-item_last" data-type="text" style="display: none;">
+                        <div class="qw6 qwiz-item qwiz-item_last" data-type="text" style="display: none;">
                             <span class="step">Шаг 6/6</span>
                             <h3>Укажите номер телефона</h3>
                             <div class="last-q clearfix">
@@ -541,153 +498,35 @@
                 <div class="qwiz-wrap">
                     <div class="qw1 qwiz-item" data-type="radio" style="">
                         <span class="step">Шаг 1/6</span>
-                        <h3>Выберите класс Вашего автомобиля</h3>
-                        <div class="field_wrap field_wrap_flex field_wrap_flex_1 scroller">
-                            <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
-                                   style="">
-                                <input type="radio" class="form-field-image" name="класс автомобиля" value="Мини">
-                                <div class="form-field-image-content">
-                                    <div class="component-image form-field-image-img">
-                                        <img class="natural-image component-image__natural" alt="" src="img/qw/1_1.jpg">
-                                    </div>
-                                    <span class="form-field-image-check">
-                                    <svg class="form-field-image-check-icon"
-                                         viewBox="0 0 50 50">
-                                       <g fill="none"
-                                          fill-rule="evenodd">
-                                          <circle
-                                                  id="bg" fill="" cx="25" cy="25" r="25"></circle>
-                                          <path
-                                                  id="arrow" fill="#000"
-                                                  d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
-                                                  transform="translate(16 18)"></path>
-                                       </g>
-                                    </svg>
-                                 </span>
-                                </div>
-                                <span class="form-field-image-text">Мини</span>
-                            </label>
-                            <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
-                                   style="">
-                                <input type="radio" class="form-field-image" name="класс автомобиля" value="Седан">
-                                <div class="form-field-image-content">
-                                    <div class="component-image form-field-image-img">
-                                        <img class="natural-image component-image__natural" alt="" src="img/qw/1_2.jpg">
-                                    </div>
-                                    <span class="form-field-image-check">
-                                    <svg class="form-field-image-check-icon"
-                                         viewBox="0 0 50 50">
-                                       <g fill="none"
-                                          fill-rule="evenodd">
-                                          <circle
-                                                  id="bg" fill="" cx="25" cy="25" r="25"></circle>
-                                          <path
-                                                  id="arrow" fill="#000"
-                                                  d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
-                                                  transform="translate(16 18)"></path>
-                                       </g>
-                                    </svg>
-                                 </span>
-                                </div>
-                                <span class="form-field-image-text">Седан</span>
-                            </label>
-                            <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
-                                   style="">
-                                <input type="radio" class="form-field-image" name="класс автомобиля" value="Бизнес">
-                                <div class="form-field-image-content">
-                                    <div class="component-image form-field-image-img">
-                                        <img class="natural-image component-image__natural" alt="" src="img/qw/1_3.jpg">
-                                    </div>
-                                    <span class="form-field-image-check">
-                                    <svg class="form-field-image-check-icon"
-                                         viewBox="0 0 50 50">
-                                       <g fill="none"
-                                          fill-rule="evenodd">
-                                          <circle
-                                                  id="bg" fill="" cx="25" cy="25" r="25"></circle>
-                                          <path
-                                                  id="arrow" fill="#000"
-                                                  d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
-                                                  transform="translate(16 18)"></path>
-                                       </g>
-                                    </svg>
-                                 </span>
-                                </div>
-                                <span class="form-field-image-text">Бизнес‍</span>
-                            </label>
-                            <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
-                                   style="">
-                                <input type="radio" class="form-field-image" name="класс автомобиля" value="Кроссовер">
-                                <div class="form-field-image-content">
-                                    <div class="component-image form-field-image-img">
-                                        <img class="natural-image component-image__natural" alt="" src="img/qw/1_4.jpg">
-                                    </div>
-                                    <span class="form-field-image-check">
-                                    <svg class="form-field-image-check-icon"
-                                         viewBox="0 0 50 50">
-                                       <g fill="none"
-                                          fill-rule="evenodd">
-                                          <circle
-                                                  id="bg" fill="" cx="25" cy="25" r="25"></circle>
-                                          <path
-                                                  id="arrow" fill="#000"
-                                                  d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
-                                                  transform="translate(16 18)"></path>
-                                       </g>
-                                    </svg>
-                                 </span>
-                                </div>
-                                <span class="form-field-image-text">Кроссовер</span>
-                            </label>
-                            <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
-                                   style="">
-                                <input type="radio" class="form-field-image" name="класс автомобиля"
-                                       value="Внедорожник">
-                                <div class="form-field-image-content">
-                                    <div class="component-image form-field-image-img">
-                                        <img class="natural-image component-image__natural" alt="" src="img/qw/1_5.jpg">
-                                    </div>
-                                    <span class="form-field-image-check">
-                                    <svg class="form-field-image-check-icon"
-                                         viewBox="0 0 50 50">
-                                       <g fill="none"
-                                          fill-rule="evenodd">
-                                          <circle
-                                                  id="bg" fill="" cx="25" cy="25" r="25"></circle>
-                                          <path
-                                                  id="arrow" fill="#000"
-                                                  d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
-                                                  transform="translate(16 18)"></path>
-                                       </g>
-                                    </svg>
-                                 </span>
-                                </div>
-                                <span class="form-field-image-text">Внедорожник</span>
-                            </label>
-                            <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
-                                   style="">
-                                <input type="radio" class="form-field-image" name="класс автомобиля" value="Минивен">
-                                <div class="form-field-image-content">
-                                    <div class="component-image form-field-image-img">
-                                        <img class="natural-image component-image__natural" alt="" src="img/qw/1_6.jpg">
-                                    </div>
-                                    <span class="form-field-image-check">
-                                    <svg class="form-field-image-check-icon"
-                                         viewBox="0 0 50 50">
-                                       <g fill="none"
-                                          fill-rule="evenodd">
-                                          <circle
-                                                  id="bg" fill="" cx="25" cy="25" r="25"></circle>
-                                          <path
-                                                  id="arrow" fill="#000"
-                                                  d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
-                                                  transform="translate(16 18)"></path>
-                                       </g>
-                                    </svg>
-                                 </span>
-                                </div>
-                                <span class="form-field-image-text">Минивен</span>
-                            </label>
+                        <h3>Какая требуется мощность генератора?</h3>
+
+                        <div class="field_wrap field_wrap_m" style="">
+                            <label class="f11 quiz-field_radio_text quiz-field_radio">
+                                <input type="radio" name="мощность"
+                                       value="до 10кВт"
+                                       required="">
+                                <span class="form-field-radio-item__check"></span>
+                                <span class="">до 10кВт</span></label>
+                            <label class="f11 quiz-field_radio_text quiz-field_radio">
+                                <input type="radio" name="мощность" value="от 10кВт до 50кВт" required="">
+                                <span class="form-field-radio-item__check"></span>
+                                <span class="">от 10кВт до 50кВт</span></label>
+                            <label class="f11 quiz-field_radio_text quiz-field_radio">
+                                <input type="radio" name="мощность" value="от 50кВт до 150кВт" required="">
+                                <span class="form-field-radio-item__check"></span>
+                                <span class="">от 50кВт до 150кВт</span></label>
+                            <label class="f11 quiz-field_radio_text quiz-field_radio">
+                                <input type="radio" name="мощность" value="от 150кВт до 500кВт" required="">
+                                <span class="form-field-radio-item__check"></span>
+                                <span class="">от 150кВт до 500кВт</span></label>
+                            <label class="f11 quiz-field_radio_text quiz-field_radio">
+                                <input type="radio" name="мощность" value="более 500кВт" required="">
+                                <span class="form-field-radio-item__check"></span>
+                                <span class="">более 500кВт</span></label>
+                            <label class="f11 quiz-field_radio_text quiz-field_radio">
+                                <input type="radio" name="мощность" value="Не знаю" required="">
+                                <span class="form-field-radio-item__check"></span>
+                                <span class="">Не знаю</span></label>
                         </div>
                         <div class="quiz-actions">
                             <span class="next component-button effect--opacity">Далее</span>
@@ -695,20 +534,20 @@
                     </div>
                     <div class="qw2 qwiz-item" data-type="text" style="display: none;">
                         <span class="step">Шаг 2/6</span>
-                        <h3>Какой вид оклейки интересует?</h3>
+                        <h3>Вам нужен генератор для резерва или как основной источник электричества?</h3>
                         <div class="field_wrap field_wrap_m" style="">
                             <label class="f11 quiz-field_radio_text quiz-field_radio">
-                                <input type="radio" name="оклейка" value="Полная" required="">
+                                <input type="radio" name="вопрос 2" value="Как основной" required="">
                                 <span class="form-field-radio-item__check"></span>
-                                <span class="">Полная</span></label>
+                                <span class="">Как основной</span></label>
                             <label class="f11 quiz-field_radio_text quiz-field_radio">
-                                <input type="radio" name="оклейка" value="Частичная" required="">
+                                <input type="radio" name="вопрос 2" value="Как резервный" required="">
                                 <span class="form-field-radio-item__check"></span>
-                                <span class="">Частичная</span></label>
+                                <span class="">Как резервный</span></label>
                             <label class="f11 quiz-field_radio_text quiz-field_radio">
-                                <input type="radio" name="оклейка" value="Нужен совет специалиста" required="">
+                                <input type="radio" name="вопрос 2" value="Не знаю" required="">
                                 <span class="form-field-radio-item__check"></span>
-                                <span class="">Нужен совет специалиста</span></label>
+                                <span class="">Не знаю</span></label>
                         </div>
                         <div class="quiz-actions">
                             <span class="prev component-button effect--opacity">Назад</span>
@@ -717,161 +556,248 @@
                     </div>
                     <div class="qw3 qwiz-item" data-type="text" style="display: none;">
                         <span class="step">Шаг 3/6</span>
-                        <h3>Какой пленкой хотите оклеить автомобиль?</h3>
+                        <h3>Какой вариант исполнения генератора необходим?</h3>
+
+                        <div class="field_wrap field_wrap_flex field_wrap_flex_1 scroller">
+                            <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
+                                   style="">
+                                <input type="radio" class="form-field-image" name="вариант исполнения" value="Открытый">
+                                <div class="form-field-image-content">
+                                    <div class="component-image form-field-image-img">
+                                        <img class="natural-image component-image__natural" alt=""
+                                             src="img/qw/1_1.jpg">
+                                    </div>
+                                    <span class="form-field-image-check">
+                                       <svg class="form-field-image-check-icon"
+                                            viewBox="0 0 50 50">
+                                          <g fill="none"
+                                             fill-rule="evenodd">
+                                             <circle
+                                                     id="bg" fill="" cx="25" cy="25" r="25"></circle>
+                                             <path
+                                                     id="arrow" fill="#000"
+                                                     d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
+                                                     transform="translate(16 18)"></path>
+                                          </g>
+                                       </svg>
+                                    </span>
+                                </div>
+                                <span class="form-field-image-text">Открытый</span>
+                            </label>
+                            <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
+                                   style="">
+                                <input type="radio" class="form-field-image" name="вариант исполнения" value="В контейнере">
+                                <div class="form-field-image-content">
+                                    <div class="component-image form-field-image-img">
+                                        <img class="natural-image component-image__natural" alt=""
+                                             src="img/qw/1_2.jpg">
+                                    </div>
+                                    <span class="form-field-image-check">
+                                       <svg class="form-field-image-check-icon"
+                                            viewBox="0 0 50 50">
+                                          <g fill="none"
+                                             fill-rule="evenodd">
+                                             <circle
+                                                     id="bg" fill="" cx="25" cy="25" r="25"></circle>
+                                             <path
+                                                     id="arrow" fill="#000"
+                                                     d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
+                                                     transform="translate(16 18)"></path>
+                                          </g>
+                                       </svg>
+                                    </span>
+                                </div>
+                                <span class="form-field-image-text">В контейнере</span>
+                            </label>
+                            <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
+                                   style="">
+                                <input type="radio" class="form-field-image" name="вариант исполнения" value="На шасси">
+                                <div class="form-field-image-content">
+                                    <div class="component-image form-field-image-img">
+                                        <img class="natural-image component-image__natural" alt=""
+                                             src="img/qw/1_3.jpg">
+                                    </div>
+                                    <span class="form-field-image-check">
+                                       <svg class="form-field-image-check-icon"
+                                            viewBox="0 0 50 50">
+                                          <g fill="none"
+                                             fill-rule="evenodd">
+                                             <circle
+                                                     id="bg" fill="" cx="25" cy="25" r="25"></circle>
+                                             <path
+                                                     id="arrow" fill="#000"
+                                                     d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
+                                                     transform="translate(16 18)"></path>
+                                          </g>
+                                       </svg>
+                                    </span>
+                                </div>
+                                <span class="form-field-image-text">На шасси‍</span>
+                            </label>
+                            <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
+                                   style="">
+                                <input type="radio" class="form-field-image" name="вариант исполнения"
+                                       value="В кожухе">
+                                <div class="form-field-image-content">
+                                    <div class="component-image form-field-image-img">
+                                        <img class="natural-image component-image__natural" alt=""
+                                             src="img/qw/1_4.jpg">
+                                    </div>
+                                    <span class="form-field-image-check">
+                                       <svg class="form-field-image-check-icon"
+                                            viewBox="0 0 50 50">
+                                          <g fill="none"
+                                             fill-rule="evenodd">
+                                             <circle
+                                                     id="bg" fill="" cx="25" cy="25" r="25"></circle>
+                                             <path
+                                                     id="arrow" fill="#000"
+                                                     d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
+                                                     transform="translate(16 18)"></path>
+                                          </g>
+                                       </svg>
+                                    </span>
+                                </div>
+                                <span class="form-field-image-text">В кожухе</span>
+                            </label>
+                            <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
+                                   style="">
+                                <input type="radio" class="form-field-image" name="вариант исполнения"
+                                       value="Не знаю">
+                                <div class="form-field-image-content">
+                                    <div class="component-image form-field-image-img">
+                                        <img class="natural-image component-image__natural" alt=""
+                                             src="img/qw/1_5.jpg">
+                                    </div>
+                                    <span class="form-field-image-check">
+                                       <svg class="form-field-image-check-icon"
+                                            viewBox="0 0 50 50">
+                                          <g fill="none"
+                                             fill-rule="evenodd">
+                                             <circle
+                                                     id="bg" fill="" cx="25" cy="25" r="25"></circle>
+                                             <path
+                                                     id="arrow" fill="#000"
+                                                     d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
+                                                     transform="translate(16 18)"></path>
+                                          </g>
+                                       </svg>
+                                    </span>
+                                </div>
+                                <span class="form-field-image-text">Не знаю</span>
+                            </label>
+
+                        </div>
+
+
+                        <div class="quiz-actions">
+                            <span class="prev component-button effect--opacity">Назад</span>
+                            <span class="next component-button effect--opacity">Далее</span>
+                        </div>
+                    </div>
+                    <div class="qw4 qwiz-item" data-type="text" style="display: none;">
+                        <span class="step">Шаг 4/6</span>
+                        <h3>Нужна ли вам система автоматического запуска?</h3>
                         <div class="field_wrap field_wrap_m" style="">
                             <label class="f11 quiz-field_radio_text quiz-field_radio">
-                                <input type="radio" name="пленка"
-                                       value="Прозрачная (полиуретановая пленка для антигравийной защиты)" required="">
+                                <input type="radio" name="система запуска" value="Да" required="">
                                 <span class="form-field-radio-item__check"></span>
-                                <span class="">Прозрачная (полиуретановая пленка для антигравийной защиты)</span></label>
+                                <span class="">Да</span></label>
                             <label class="f11 quiz-field_radio_text quiz-field_radio">
-                                <input type="radio" name="пленка" value="Цветная (виниловая пленка)" required="">
+                                <input type="radio" name="система запуска" value="Нет" required="">
                                 <span class="form-field-radio-item__check"></span>
-                                <span class="">Цветная (виниловая пленка)</span></label>
+                                <span class="">Нет</span></label>
+                            <label class="f11 quiz-field_radio_text quiz-field_radio">
+                                <input type="radio" name="система запуска" value="Не знаю" required="">
+                                <span class="form-field-radio-item__check"></span>
+                                <span class="">Не знаю</span></label>
                         </div>
                         <div class="quiz-actions">
                             <span class="prev component-button effect--opacity">Назад</span>
                             <span class="next component-button effect--opacity">Далее</span>
                         </div>
                     </div>
-                    <div class="qw4 qwiz-item" data-type="radio" style="display: none;">
-                        <span class="step">Шаг 4/6</span>
-                        <h3>Выберете себе подарок, который получите при заказе:</h3>
-                        <div class="field_wrap field_wrap_flex scroller">
-                            <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
-                                   style="">
-                                <input type="radio" class="form-field-image" name="Подарок"
-                                       value="Скидка на пленку до 15%">
-                                <div class="form-field-image-content">
-                                    <div class="component-image form-field-image-img">
-                                        <img class="natural-image component-image__natural" alt="" src="img/qw/4_1.jpg">
-                                    </div>
-                                    <span class="form-field-image-check">
-                                    <svg class="form-field-image-check-icon"
-                                         viewBox="0 0 50 50">
-                                       <g fill="none"
-                                          fill-rule="evenodd">
-                                          <circle
-                                                  id="bg" fill="" cx="25" cy="25" r="25"></circle>
-                                          <path
-                                                  id="arrow" fill="#000"
-                                                  d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
-                                                  transform="translate(16 18)"></path>
-                                       </g>
-                                    </svg>
-                                 </span>
-                                </div>
-                                <span class="form-field-image-text">Скидка на пленку до 15%</span>
-                            </label>
-                            <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
-                                   style="">
-                                <input type="radio" class="form-field-image" name="Подарок"
-                                       value="Дополнительная гарантия на материалы">
-                                <div class="form-field-image-content">
-                                    <div class="component-image form-field-image-img">
-                                        <img class="natural-image component-image__natural" alt="" src="img/qw/4_2.jpg">
-                                    </div>
-                                    <span class="form-field-image-check">
-                                    <svg class="form-field-image-check-icon"
-                                         viewBox="0 0 50 50">
-                                       <g fill="none"
-                                          fill-rule="evenodd">
-                                          <circle
-                                                  id="bg" fill="" cx="25" cy="25" r="25"></circle>
-                                          <path
-                                                  id="arrow" fill="#000"
-                                                  d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
-                                                  transform="translate(16 18)"></path>
-                                       </g>
-                                    </svg>
-                                 </span>
-                                </div>
-                                <span class="form-field-image-text">Дополнительная гарантия на материалы</span>
-                            </label>
-                            <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
-                                   style="">
-                                <input type="radio" class="form-field-image" name="Подарок"
-                                       value="Бесплатный дополнительные работы по авто">
-                                <div class="form-field-image-content">
-                                    <div class="component-image form-field-image-img">
-                                        <img class="natural-image component-image__natural" alt="" src="img/qw/4_3.jpg">
-                                    </div>
-                                    <span class="form-field-image-check">
-                                    <svg class="form-field-image-check-icon"
-                                         viewBox="0 0 50 50">
-                                       <g fill="none"
-                                          fill-rule="evenodd">
-                                          <circle
-                                                  id="bg" fill="" cx="25" cy="25" r="25"></circle>
-                                          <path
-                                                  id="arrow" fill="#000"
-                                                  d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
-                                                  transform="translate(16 18)"></path>
-                                       </g>
-                                    </svg>
-                                 </span>
-                                </div>
-                                <span class="form-field-image-text">Бесплатный дополнительные работы по авто</span>
-                            </label>
-                        </div>
-                        <div class="quiz-actions">
-                            <span class="prev component-button effect--opacity">Назад</span>
-                            <span class="next component-button effect--opacity">Далее</span>
-                        </div>
-                    </div>
-                    <div class="qw6 qwiz-item" data-type="radio" style="display: none;">
+                    <div class="qw5 qwiz-item" data-type="radio" style="display: none;">
                         <span class="step">Шаг 5/6</span>
-                        <h3>Как Вам удобнее получить расчет стоимости?</h3>
+                        <h3>Какой подарок Вы хотели бы получить при покупке дизельного генератора?</h3>
                         <div class="field_wrap field_wrap_flex scroller">
                             <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
                                    style="">
-                                <input type="radio" class="form-field-image" name="connection" value="WhatsApp">
+                                <input type="radio" class="form-field-image" name="Подарок"
+                                       value="Комплект ЗИП для техобслуживания">
                                 <div class="form-field-image-content">
                                     <div class="component-image form-field-image-img">
                                         <img class="natural-image component-image__natural" alt=""
-                                             src="img/qw/22335674_250_q55.avif">
+                                             src="img/qw/4_1.jpg">
                                     </div>
                                     <span class="form-field-image-check">
-                                    <svg class="form-field-image-check-icon"
-                                         viewBox="0 0 50 50">
-                                       <g fill="none"
-                                          fill-rule="evenodd">
-                                          <circle
-                                                  id="bg" fill="" cx="25" cy="25" r="25"></circle>
-                                          <path
-                                                  id="arrow" fill="#000"
-                                                  d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
-                                                  transform="translate(16 18)"></path>
-                                       </g>
-                                    </svg>
-                                 </span>
+                                       <svg class="form-field-image-check-icon"
+                                            viewBox="0 0 50 50">
+                                          <g fill="none"
+                                             fill-rule="evenodd">
+                                             <circle
+                                                     id="bg" fill="" cx="25" cy="25" r="25"></circle>
+                                             <path
+                                                     id="arrow" fill="#000"
+                                                     d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
+                                                     transform="translate(16 18)"></path>
+                                          </g>
+                                       </svg>
+                                    </span>
                                 </div>
-                                <span class="form-field-image-text">WhatsApp</span>
+                                <span class="form-field-image-text">Комплект ЗИП для техобслуживания</span>
                             </label>
                             <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
                                    style="">
-                                <input type="radio" class="form-field-image" name="connection" value="Позвоните">
+                                <input type="radio" class="form-field-image" name="Подарок"
+                                       value="Кэшбэк в размере 15 000 руб.">
                                 <div class="form-field-image-content">
                                     <div class="component-image form-field-image-img">
                                         <img class="natural-image component-image__natural" alt=""
-                                             src="img/qw/22335695_250_q55.avif">
+                                             src="img/qw/4_2.jpg">
                                     </div>
                                     <span class="form-field-image-check">
-                                    <svg class="form-field-image-check-icon"
-                                         viewBox="0 0 50 50">
-                                       <g fill="none"
-                                          fill-rule="evenodd">
-                                          <circle
-                                                  id="bg" fill="" cx="25" cy="25" r="25"></circle>
-                                          <path
-                                                  id="arrow" fill="#000"
-                                                  d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
-                                                  transform="translate(16 18)"></path>
-                                       </g>
-                                    </svg>
-                                 </span>
+                                       <svg class="form-field-image-check-icon"
+                                            viewBox="0 0 50 50">
+                                          <g fill="none"
+                                             fill-rule="evenodd">
+                                             <circle
+                                                     id="bg" fill="" cx="25" cy="25" r="25"></circle>
+                                             <path
+                                                     id="arrow" fill="#000"
+                                                     d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
+                                                     transform="translate(16 18)"></path>
+                                          </g>
+                                       </svg>
+                                    </span>
                                 </div>
-                                <span class="form-field-image-text">Позвоните</span>
+                                <span class="form-field-image-text">Кэшбэк в размере <br>15 000 руб.</span>
+                            </label>
+                            <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
+                                   style="">
+                                <input type="radio" class="form-field-image" name="Подарок"
+                                       value="Дополнительная скидка на покупку генератора">
+                                <div class="form-field-image-content">
+                                    <div class="component-image form-field-image-img">
+                                        <img class="natural-image component-image__natural" alt=""
+                                             src="img/qw/4_3.jpg">
+                                    </div>
+                                    <span class="form-field-image-check">
+                                       <svg class="form-field-image-check-icon"
+                                            viewBox="0 0 50 50">
+                                          <g fill="none"
+                                             fill-rule="evenodd">
+                                             <circle
+                                                     id="bg" fill="" cx="25" cy="25" r="25"></circle>
+                                             <path
+                                                     id="arrow" fill="#000"
+                                                     d="M1.4 6.46154L0 7.90507L6 14L18 1.44354L16.6 0L6 11.1461L1.4 6.46154Z"
+                                                     transform="translate(16 18)"></path>
+                                          </g>
+                                       </svg>
+                                    </span>
+                                </div>
+                                <span class="form-field-image-text">Дополнительная скидка на покупку генератора</span>
                             </label>
                         </div>
                         <div class="quiz-actions">
@@ -879,7 +805,7 @@
                             <span class="next component-button effect--opacity">Далее</span>
                         </div>
                     </div>
-                    <div class="qw7 qwiz-item qwiz-item_last" data-type="text" style="display: none;">
+                    <div class="qw6 qwiz-item qwiz-item_last" data-type="text" style="display: none;">
                         <span class="step">Шаг 6/6</span>
                         <h3>Укажите номер телефона</h3>
                         <div class="last-q clearfix">
