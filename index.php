@@ -72,7 +72,7 @@
                     </div>
                 </div>
                     <div class="btn-wrap" style="text-align:center">
-                        Ответьте на 6 вопросов и мы подберем все варианты генераторов с ценами для Ваших задач<br> за 2 минуты
+                        Ответьте на 6 вопросов и мы подберем все варианты генераторов с ценами для <br>Ваших задач за 2 минуты!
                         <a class="btn_new" data-touch='false' data-fancybox="" data-src="#popup_qwiz"
                            href="javascript:;"><span>Подобрать генератор</span></a>
                     </div>
@@ -119,9 +119,9 @@
                                     <span class="form-field-radio-item__check"></span>
                                     <span class="">более 500кВт</span></label>
                                 <label class="f11 quiz-field_radio_text quiz-field_radio">
-                                    <input type="radio" name="мощность" value="Не знаю" required="">
+                                    <input type="radio" name="мощность" value="Не знаю. Требуется консультация специалиста" required="">
                                     <span class="form-field-radio-item__check"></span>
-                                    <span class="">Не знаю</span></label>
+                                    <span class="">Не знаю. Требуется консультация специалиста</span></label>
                             </div>
                             <div class="quiz-actions">
                                 <span class="next component-button effect--opacity">Далее</span>
@@ -140,9 +140,9 @@
                                     <span class="form-field-radio-item__check"></span>
                                     <span class="">Как резервный</span></label>
                                 <label class="f11 quiz-field_radio_text quiz-field_radio">
-                                    <input type="radio" name="вопрос 2" value="Не знаю" required="">
+                                    <input type="radio" name="вопрос 2" value="Не знаю. Требуется консультация специалиста" required="">
                                     <span class="form-field-radio-item__check"></span>
-                                    <span class="">Не знаю</span></label>
+                                    <span class="">Не знаю. Требуется консультация специалиста</span></label>
                             </div>
                             <div class="quiz-actions">
                                 <span class="prev component-button effect--opacity">Назад</span>
@@ -258,7 +258,7 @@
                                 <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
                                        style="">
                                     <input type="radio" class="form-field-image" name="вариант исполнения"
-                                           value="Не знаю">
+                                           value="Не знаю. Требуется консультация специалиста">
                                     <div class="form-field-image-content">
                                         <div class="component-image form-field-image-img">
                                             <img class="natural-image component-image__natural" alt=""
@@ -279,7 +279,7 @@
                                        </svg>
                                     </span>
                                     </div>
-                                    <span class="form-field-image-text">Не знаю</span>
+                                    <span class="form-field-image-text">Не знаю. Требуется консультация специалиста</span>
                                 </label>
 
                             </div>
@@ -303,9 +303,9 @@
                                     <span class="form-field-radio-item__check"></span>
                                     <span class="">Нет</span></label>
                                 <label class="f11 quiz-field_radio_text quiz-field_radio">
-                                    <input type="radio" name="система запуска" value="Не знаю" required="">
+                                    <input type="radio" name="система запуска" value="Не знаю. Требуется консультация специалиста" required="">
                                     <span class="form-field-radio-item__check"></span>
-                                    <span class="">Не знаю</span></label>
+                                    <span class="">Не знаю. Требуется консультация специалиста</span></label>
                             </div>
                             <div class="quiz-actions">
                                 <span class="prev component-button effect--opacity">Назад</span>
@@ -410,10 +410,17 @@
                                         <input type="tel" required="" name="phone" placeholder="+7 (900) 000-00-00"
                                                aria-required="true">
                                     </div>
-                                    <div style="font-size:13px;margin-bottom:15px;">Отправляя свои контактные данные, Вы
-                                        принимаете <a style="" href="/quiz/soglashenie.html">соглашение об обработке
-                                            персональных данных</a>
+                                    <div class="last-q_tel">
+                                        <span>Email:</span>
+                                        <input type="text" required="" name="email" placeholder="Введите email (необязательно)"
+                                               >
                                     </div>
+                                    <div class="form__signature">
+                                        <i class="icon f_locked"></i>
+                                        Заполнение заявки Вас ни к чему не
+                                        обязывает! <br><span style="font-size: 10px;">Отправляя свои контактные данные, Вы принимаете <a target="_blank" href="/quiz/soglashenie.html">соглашение об обработке персональных данных</a></span>
+                                    </div>
+
                                     <div class="quiz-actions">
                                         <span class="prev component-button effect--opacity">Назад</span>
                                         <button type="submit"
@@ -443,7 +450,7 @@
             </div>
             <div class="head_phones">
                 <div><a href="tel: 84991137191" class="zphone"> 8 (499) 113-71-91</a><br>
-                    <a style="font-size:0.7em" href="/quiz/soglashenie.html">Cоглашение об обработке персональных
+                    <a style="font-size:0.7em; color:grey;" href="/quiz/soglashenie.html">Cоглашение об обработке персональных
                         данных</a>
                 </div>
             </div>
@@ -524,9 +531,9 @@
                                 <span class="form-field-radio-item__check"></span>
                                 <span class="">более 500кВт</span></label>
                             <label class="f11 quiz-field_radio_text quiz-field_radio">
-                                <input type="radio" name="мощность" value="Не знаю" required="">
+                                <input type="radio" name="мощность" value="Не знаю. Требуется консультация специалиста" required="">
                                 <span class="form-field-radio-item__check"></span>
-                                <span class="">Не знаю</span></label>
+                                <span class="">Не знаю. Требуется консультация специалиста</span></label>
                         </div>
                         <div class="quiz-actions">
                             <span class="next component-button effect--opacity">Далее</span>
@@ -545,9 +552,9 @@
                                 <span class="form-field-radio-item__check"></span>
                                 <span class="">Как резервный</span></label>
                             <label class="f11 quiz-field_radio_text quiz-field_radio">
-                                <input type="radio" name="вопрос 2" value="Не знаю" required="">
+                                <input type="radio" name="вопрос 2" value="Не знаю. Требуется консультация специалиста" required="">
                                 <span class="form-field-radio-item__check"></span>
-                                <span class="">Не знаю</span></label>
+                                <span class="">Не знаю. Требуется консультация специалиста</span></label>
                         </div>
                         <div class="quiz-actions">
                             <span class="prev component-button effect--opacity">Назад</span>
@@ -663,7 +670,7 @@
                             <label class="radio quiz-field quiz-field_radio_img variant-item form-field-image-item"
                                    style="">
                                 <input type="radio" class="form-field-image" name="вариант исполнения"
-                                       value="Не знаю">
+                                       value="Не знаю. Требуется консультация специалиста">
                                 <div class="form-field-image-content">
                                     <div class="component-image form-field-image-img">
                                         <img class="natural-image component-image__natural" alt=""
@@ -684,7 +691,7 @@
                                        </svg>
                                     </span>
                                 </div>
-                                <span class="form-field-image-text">Не знаю</span>
+                                <span class="form-field-image-text">Не знаю. Требуется консультация специалиста</span>
                             </label>
 
                         </div>
@@ -708,9 +715,9 @@
                                 <span class="form-field-radio-item__check"></span>
                                 <span class="">Нет</span></label>
                             <label class="f11 quiz-field_radio_text quiz-field_radio">
-                                <input type="radio" name="система запуска" value="Не знаю" required="">
+                                <input type="radio" name="система запуска" value="Не знаю. Требуется консультация специалиста" required="">
                                 <span class="form-field-radio-item__check"></span>
-                                <span class="">Не знаю</span></label>
+                                <span class="">Не знаю. Требуется консультация специалиста</span></label>
                         </div>
                         <div class="quiz-actions">
                             <span class="prev component-button effect--opacity">Назад</span>
@@ -809,26 +816,35 @@
                         <span class="step">Шаг 6/6</span>
                         <h3>Укажите номер телефона</h3>
                         <div class="last-q clearfix">
-                            <div class="last-q_inner">
+                            <div class="last-q_inner last-q_inner-open">
                                 <div class="last-q_tel">
                                     <span>Телефон:</span>
                                     <input type="tel" required="" name="phone" placeholder="+7 (900) 000-00-00"
                                            aria-required="true">
                                 </div>
-                                <div style="font-size:13px;margin-bottom:15px;">Отправляя свои контактные данные, Вы
-                                    принимаете <a style="" href="/quiz/soglashenie.html">соглашение об обработке
-                                        персональных данных</a>
+                                <div class="last-q_tel">
+                                    <span>Email:</span>
+                                    <input type="text" required="" name="email" placeholder="Введите email (необязательно)"
+                                    >
                                 </div>
+                                <div class="form__signature">
+                                    <i class="icon f_locked"></i>
+                                    Заполнение заявки Вас ни к чему не
+                                    обязывает! <br><span style="font-size: 10px;">Отправляя свои контактные данные, Вы принимаете <a target="_blank" href="/quiz/soglashenie.html">соглашение об обработке персональных данных</a></span>
+                                </div>
+
                                 <div class="quiz-actions">
                                     <span class="prev component-button effect--opacity">Назад</span>
                                     <button type="submit"
-                                            class="js--form-submit js--form-submit_2 next component-button effect--opacity">
+                                            class="js--form-submit js--form-submit_1 next component-button effect--opacity">
                                         Далее
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
                 </div>
             </form>
         </div>

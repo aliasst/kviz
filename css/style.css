@@ -925,15 +925,15 @@ span.step {
 
 
 .logo {
-    width: 60px;
+    width: 190px;
     height: 60px;
-    background: url(../img/logo-new.png) no-repeat center center;
+    background: url(../img/logo.jpg) no-repeat center center;
     background-size: cover;
     margin-right: 15px;
 }
 
 header .logo {
-    background: url(../img/logo-new.png) no-repeat center center;
+    background: url(../img/logo.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -1174,7 +1174,7 @@ h1 span {
 }
 
 .main_ben_text div {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 800;
     margin: 0 0 0
 }
@@ -1514,10 +1514,11 @@ h1 span {
 .form__signature {
     position: relative;
     padding-left: 45px;
-    margin-top: 10px;
+    margin-top: -10px;
     color: #080a0c;
     font-size: 14px;
     line-height: 1;
+    margin-bottom:20px;
 }
 
 .form__signature .icon {
@@ -4827,8 +4828,8 @@ input.inp_2 {
 
 
     h1 {
-        font-size: 48px;
-        line-height: 59px;
+        font-size: 42px;
+        line-height: 52px;
     }
 
     #mainblock h1 {
@@ -5566,5 +5567,11 @@ body .fancybox-close-small:after {
 
 .offer-wrap {
     background: rgba(0,0,0,.7);
-    padding: 29px 58px;
+    padding: 29px 69px;
+    margin-left:-60px;
+    width:92%;
+}
+
+.last-q {
+    text-align: left;
 }
