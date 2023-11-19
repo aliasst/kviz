@@ -43,7 +43,7 @@
     <section id="block_main">
         <div class="wrap">
             <div class="offer-wrap">
-            <h1>ПОСТАВКА ДИЗЕЛЬНЫХ ГЕНЕРАТОРОВ (ДГУ, ДЭС) ПО ВСЕЙ РОССИИ ПОД КЛЮЧ ОТ 1 ДНЯ СО СКИДКОЙ ДО 50% И ОТСРОЧКОЙ ПЛАТЕЖКА
+                <h1>ПОСТАВКА ДИЗЕЛЬНЫХ ГЕНЕРАТОРОВ (ДГУ, ДЭС) ПО ВСЕЙ РОССИИ ПОД КЛЮЧ <span>ОТ 1 ДНЯ СО СКИДКОЙ ДО 50% И ОТСРОЧКОЙ ПЛАТЕЖА</span>
             </h1>
             <div class="">
 
@@ -402,7 +402,9 @@
                         </div>
                         <div class="qw6 qwiz-item qwiz-item_last" data-type="text" style="display: none;">
                             <span class="step">Шаг 6/6</span>
-                            <h3>Укажите номер телефона</h3>
+                            <h4>Отлично! Мы уже подготовили расчет и можем предложить несколько вариантов для Вас.
+                            </h4>
+                            <h5>Оставьте свои контактные данные и мы отправим подобранные варианты и цены.</h5>
                             <div class="last-q clearfix">
                                 <div class="last-q_inner last-q_inner-open">
                                     <div class="last-q_tel">
@@ -814,7 +816,9 @@
                     </div>
                     <div class="qw6 qwiz-item qwiz-item_last" data-type="text" style="display: none;">
                         <span class="step">Шаг 6/6</span>
-                        <h3>Укажите номер телефона</h3>
+                        <h4>Отлично! Мы уже подготовили расчет и можем предложить несколько вариантов для Вас.
+                        </h4>
+                        <h5>Оставьте свои контактные данные и мы отправим подобранные варианты и цены.</h5>
                         <div class="last-q clearfix">
                             <div class="last-q_inner last-q_inner-open">
                                 <div class="last-q_tel">

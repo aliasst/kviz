@@ -1087,7 +1087,7 @@ header .logo {
 
 #block_main {
     padding: 150px 0 270px;
-    background: url(../img/main_bg.jpg) no-repeat center center;
+    background: url(../img/main_bg.jpg) no-repeat bottom center;
     background-size: cover;
     color: #fff;
 }
@@ -1119,13 +1119,12 @@ h1 {
     text-align: left
 }
 
-h1 span,
 .bh1 span {
     font-weight: 400
 }
 
 h1 span {
-    display: block
+  text-decoration: underline;
 }
 
 #block_calc {
@@ -3687,7 +3686,7 @@ input.inp_2 {
     }
 
     .logo {
-        background: url(../img/logo.png) no-repeat center center;
+
     }
 
     .desc {
@@ -3700,8 +3699,6 @@ input.inp_2 {
 
     #block_main {
         padding: 70px 0;
-        background-position: center top;
-        background-size: auto 42%
     }
 
 
@@ -3719,12 +3716,11 @@ input.inp_2 {
     }
 
     .main_ben .icon {
-        margin: 0 0 15px
+
     }
 
     .main_ben_text {
-        width: 100%;
-        text-align: center
+
     }
 
     .main_ben_text div {
@@ -5495,8 +5491,16 @@ scrollbar-width: none;
     }
 
     .logo-row {
+        display:block;
         margin-left: auto;
         margin-right: auto;
+        text-align:center;
+    }
+
+    .logo {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10px;
     }
 
     .f-r {
@@ -5521,6 +5525,8 @@ scrollbar-width: none;
         margin-bottom: 30px;
         text-align: center;
     }
+
+
 
 
 }
@@ -5575,3 +5581,29 @@ body .fancybox-close-small:after {
 .last-q {
     text-align: left;
 }
+
+
+.qwiz-item H4 {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.qwiz-item H5 {
+    font-size: 22px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+
+    .offer-wrap {
+        padding: 29px 29px;
+        margin-left: unset;
+        width: 100%;
+    }
+
+    }
