@@ -1,7 +1,7 @@
 <?php include_once 'parts/header.php';?>
 <?php
 global $offer;
-$offer = "ПОСТАВКА ДИЗЕЛЬНЫХ ГЕНЕРАТОРОВ (ДГУ, ДЭС) ПО ВСЕЙ РОССИИ ПОД КЛЮЧ <span>ОТ 1 ДНЯ СО СКИДКОЙ ДО 50% И ОТСРОЧКОЙ ПЛАТЕЖА</span>"
+$offer = "ПОСТАВКА ДИЗЕЛЬНЫХ ГЕНЕРАТОРОВ <span>Aksa</span> ПО ВСЕЙ РОССИИ ПОД КЛЮЧ <span>ОТ 1 ДНЯ СО СКИДКОЙ ДО 50% И ОТСРОЧКОЙ ПЛАТЕЖА</span>"
 ?>
 <main id="mainblock">
     <?php include_once 'parts/main.php';?>
@@ -12,7 +12,7 @@ $offer = "ПОСТАВКА ДИЗЕЛЬНЫХ ГЕНЕРАТОРОВ (ДГУ, Д
             <div class="qwiz-inner qwiz-open-inner ">
                 <form class="qwiztest" id="form_quiz_1">
                     <!-- Hidden Required Fields -->
-                    <input name="form_subject" value="КВИЗ" type="hidden">
+                    <input name="form_subject" value="КВИЗ Aksa" type="hidden">
                     <!-- END Hidden Required Fields -->
                     <?php include 'parts/quiz.php'; ?>
 
@@ -29,7 +29,7 @@ $offer = "ПОСТАВКА ДИЗЕЛЬНЫХ ГЕНЕРАТОРОВ (ДГУ, Д
         <div class="qwiz-inner qwiz-modal-inner">
             <form enctype="multipart/form-data" class="qwiztest" id="form_quiz_2">
                 <!-- Hidden Required Fields -->
-                <input name="form_subject" value="КВИЗ" type="hidden">
+                <input name="form_subject" value="КВИЗ Aksa" type="hidden">
                 <!-- END Hidden Required Fields -->
                 <?php include 'parts/quiz.php'; ?>
 

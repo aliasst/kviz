@@ -1119,6 +1119,10 @@ h1 {
     text-align: left
 }
 
+#mainblock h1 {
+    text-transform: uppercase;
+}
+
 .bh1 span {
     font-weight: 400
 }
@@ -3716,7 +3720,6 @@ input.inp_2 {
     }
 
     .main_ben .icon {
-
     }
 
     .main_ben_text {

@@ -30,13 +30,13 @@ try {
     
 	
 	
-	$mail->From = 'multistar87@yandex.ru';
-	$mail->FromName = 'КВИЗ multistar-avto';
+	$mail->From = 'akrontechno@yandex.ru';
+	$mail->FromName = 'КВИЗ akrontechno.ru';
     //$mail->addAddress('fraim-stairs@yandex.ru');  
-	$mail->addAddress('MSApplication@yandex.ru');  
+	$mail->addAddress('ahtubafishing@yandex.ru');
     
         $mail->isHTML(true);
-		$mail->Subject = 'Заявка с сайта multistar-avto.ru/quiz/ ';
+		$mail->Subject = 'Заявка с сайта akrontechno.ru/quiz/ ';
 		
 			$mail->Body    = '';	
 			
